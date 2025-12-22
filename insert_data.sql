@@ -1,0 +1,95 @@
+-- Autores
+INSERT INTO "proyecto_final_2".authors (name, nationality) VALUES
+('Gabriel García Márquez', 'Colombia'),
+('J.K. Rowling', 'Reino Unido'),
+('Haruki Murakami', 'Japón'),
+('Isabel Allende', 'Chile'),
+('Stephen King', 'Estados Unidos'),
+('Yuval Noah Harari', 'Israel'),
+('Mario Vargas Llosa', 'Perú'),
+('Agatha Christie', 'Reino Unido'),
+('George Orwell', 'Reino Unido'),
+('Paulo Coelho', 'Brasil');
+
+-- Categorías
+INSERT INTO "proyecto_final_2".categories (name) VALUES
+('Ficción'), ('No Ficción'), ('Misterio'), ('Ciencia Ficción'), ('Historia'), ('Autoayuda');
+
+-- Libros (50 registros)
+INSERT INTO "proyecto_final_2".books (title, author_id, category_id, price, stock) VALUES
+('Cien años de soledad', 1, 1, 18.90, 45),
+('Harry Potter y la piedra filosofal', 2, 4, 22.50, 80),
+('1Q84', 3, 1, 25.00, 30),
+('La casa de los espíritus', 4, 1, 19.90, 35),
+('It', 5, 3, 21.00, 60),
+('Sapiens', 6, 2, 24.90, 100),
+('El amor en los tiempos del cólera', 1, 1, 17.50, 40),
+('Harry Potter y el cáliz de fuego', 2, 4, 28.00, 55),
+('Carrie', 5, 3, 15.90, 70),
+('La fiesta del chivo', 7, 5, 20.00, 25),
+('1984', 9, 4, 16.90, 90),
+('El alquimista', 10, 6, 14.90, 120),
+('Asesinato en el Orient Express', 8, 3, 13.50, 65),
+('Animal Farm', 9, 1, 12.00, 85),
+('Kafka en la orilla', 3, 1, 23.50, 28),
+('Homo Deus', 6, 2, 26.90, 50),
+('Paula', 4, 2, 18.00, 32),
+('El resplandor', 5, 3, 19.90, 48),
+('Travesuras de la niña mala', 7, 1, 21.50, 20),
+('Verónika decide morir', 10, 1, 15.00, 75),
+('Rebelión en la granja', 9, 1, 11.90, 95),
+('El túnel', 3, 1, 17.90, 40),
+('De animales a dioses', 6, 2, 25.50, 60),
+('Eva Luna', 4, 1, 18.50, 38),
+('Misery', 5, 3, 20.50, 52),
+('Conversación en la catedral', 7, 1, 22.90, 18),
+('El extranjero', 3, 1, 16.50, 42),
+('21 lecciones para el siglo XXI', 6, 2, 27.00, 45),
+('La ciudad y los perros', 7, 1, 19.90, 22),
+('Brida', 10, 6, 13.90, 80),
+('Diez negritos', 8, 3, 14.50, 70),
+('El libro de los abrazos', 1, 1, 15.90, 35),
+('Harry Potter y las reliquias de la muerte', 2, 4, 30.00, 50),
+('Doctor Sueño', 5, 3, 23.90, 44),
+('Sapiens (edición gráfica)', 6, 2, 35.00, 20),
+('El aleph', 1, 1, 16.90, 30),
+('Norwegian Wood', 3, 1, 19.50, 55),
+('El perfume', 5, 3, 18.90, 62),
+('La guerra del fin del mundo', 7, 5, 24.90, 15),
+('Once minutos', 10, 1, 14.00, 88),
+('Muerte en el Nilo', 8, 3, 13.90, 75),
+('Ficciones', 1, 1, 17.50, 40),
+('Crónica de una muerte anunciada', 1, 1, 12.90, 100),
+('El coronel no tiene quien le escriba', 1, 1, 11.50, 90),
+('Harry Potter y la cámara secreta', 2, 4, 20.00, 70),
+('Eva Luna', 4, 1, 21.90, 33),
+('Tokio Blues', 3, 1, 18.00, 60),
+('Apocalipsis', 5, 3, 28.90, 25),
+('La verdad sobre el caso Harry Quebert', 6, 3, 22.00, 40),
+('Pantaleón y las visitadoras', 7, 1, 19.00, 28);
+
+-- Clientes (20 registros)
+INSERT INTO "proyecto_final_2".customers (name, email, join_date) VALUES
+('Ana López', 'ana.lopez@email.com', '2024-01-15'),
+('Carlos Ruiz', 'carlos.ruiz@email.com', '2024-02-20'),
+('María González', 'maria.g@email.com', '2024-03-10'),
+('José Pérez', 'jose.perez@email.com', '2024-04-05'),
+('Laura Martínez', 'laura.m@email.com', '2024-05-12'),
+('Diego Sánchez', 'diego.s@email.com', '2024-06-18'),
+('Sofía Hernández', 'sofia.h@email.com', '2024-07-22'),
+('Miguel Torres', 'miguel.t@email.com', '2024-08-30'),
+('Valeria Castro', 'valeria.c@email.com', '2024-09-14'),
+('Andrés Rivera', 'andres.r@email.com', '2024-10-03'),
+('Camila Vargas', 'camila.v@email.com', '2024-11-11'),
+('Felipe Morales', 'felipe.m@email.com', '2024-12-01'),
+('Gabriela Ortiz', 'gabriela.o@email.com', '2025-01-08'),
+('Ricardo Flores', 'ricardo.f@email.com', '2025-01-20'),
+('Elena Ramírez', 'elena.r@email.com', '2025-02-05'),
+('Pablo Díaz', 'pablo.d@email.com', '2025-02-18'),
+('Lucía Mendoza', 'lucia.m@email.com', '2025-03-02'),
+('Javier Soto', 'javier.s@email.com', '2025-03-15'),
+('Natalia Vega', 'natalia.v@email.com', '2025-03-25'),
+('Sebastián Romero', 'sebastian.r@email.com', '2025-04-01');
+
+-- Órdenes y detalles (como te di antes, copia el bloque completo que te pasé en el mensaje anterior)
+-- (Para no hacer este mensaje eterno, usa el bloque de órdenes y detalles del mensaje donde te di el Script 4)

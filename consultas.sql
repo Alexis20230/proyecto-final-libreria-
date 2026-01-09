@@ -14,12 +14,15 @@ GROUP BY b.title, a.name
 ORDER BY cantidad_vendida DESC
 LIMIT 10;
 
--- 3. Ingresos por categoría
-SELECT cat.name AS categoria, SUM(od.quantity * od.unit_price) AS total_ingresos
+-- 3. Ingresos por categoría 
+SELECT 
+    cat.name AS categoria, 
+    SUM(od.quantity * od.unit_price) AS total_ingresos
 FROM "proyecto_final_2".order_details od
 JOIN "proyecto_final_2".books b ON od.book_id = b.book_id
 JOIN "proyecto_final_2".categories cat ON b.category_id = cat.category_id
-GROUP BY cat.name;
+GROUP BY cat.category_id, cat.name  -- Agrega la PK aquí
+ORDER BY total_ingresos DESC;  -- Opcional: para ordenar de mayor a menor
 
 -- 4. Clientes con más órdenes
 SELECT c.name, c.email, COUNT(o.order_id) AS numero_ordenes
